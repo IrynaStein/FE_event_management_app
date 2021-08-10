@@ -1,9 +1,11 @@
-
+import Header from "./Header";
+import Display from "./Display";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <Header></Header>
+      <Display></Display>
     </div>
   );
 }
