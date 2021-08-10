@@ -1,16 +1,18 @@
-function Date() {
+import { Form } from 'semantic-ui-react'
+
+const date = () => {
   const showDate = new Date();
   const displayTodaysDate =
-    showDate.getMonth() +
+    showDate.getMonth()+1 +
     " " +
     showDate.getDate() +
     " " +
     showDate.getFullYear();
   return (
     <div>
-      <input type="text" value={displayTodaysDate} readOnly="true"></input>
+      <Form.Input type="text" value={displayTodaysDate} readOnly/>
     </div>
   );
 }
 
-export default Date;
+export default date;
