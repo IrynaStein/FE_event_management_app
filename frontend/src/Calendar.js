@@ -1,6 +1,6 @@
 function Calendar(){
     return (
-        <p>Calendar</p>
+        <h1>Calendar View</h1>
     )
 }
 

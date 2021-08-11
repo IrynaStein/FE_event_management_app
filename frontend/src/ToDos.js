@@ -1,10 +1,20 @@
-
+import ToDoCard from "./ToDoCard";
 
 function ToDos ({ todos }){
 
+    const displayToDos = todos.map((todo) => {
+        return <ToDoCard
+                key={todo.id}
+                todo={todo}
+                />
+    })
+
+
+
     return (
         <div>
-            Todo 
+            <h1>Things to do today:</h1>
+            {displayToDos}
         </div>
     )
 }

@@ -12,6 +12,7 @@ function Birthdays ({ birthdays }){
     })
     return (
         <div>
+            <h1>Today's Birthdays</h1>
             {displayBirthdays}
         </div>
     )

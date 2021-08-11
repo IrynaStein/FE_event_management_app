@@ -6,6 +6,7 @@ import Display from "./Display";
 function App() {
   const [events, setEvents] = useState([])
   const [categories, setCategories] = useState([])
+  console.log(events)
 
   useEffect(() => {
     fetch('http://localhost:9393/events/')
