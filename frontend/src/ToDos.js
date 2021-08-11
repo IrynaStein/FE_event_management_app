@@ -1,6 +1,11 @@
-function ToDos (){
+
+
+function ToDos ({ todos }){
+
     return (
-        <p>todos</p>
+        <div>
+            Todo 
+        </div>
     )
 }
 

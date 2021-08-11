@@ -1,6 +1,19 @@
-function Birthdays (){
+import BirthdayCard from "./BirthdayCard";
+
+function Birthdays ({ birthdays }){
+
+    const displayBirthdays = birthdays.map((birthday) => {
+        return (
+            <BirthdayCard 
+                key={birthday.id}
+                birthday={birthday}
+            />
+        )
+    })
     return (
-        <p>birthdays</p>
+        <div>
+            {displayBirthdays}
+        </div>
     )
 }
 

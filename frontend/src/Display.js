@@ -4,13 +4,20 @@ import Birthdays from './Birthdays';
 import ToDos from './ToDos';
 import Calendar from './Calendar';
 
-function Display() {
-  return <Container>
+function Display({ events, categories }) {
+  console.log(events[0])
+
+  const birthdays = events.filter((event) => event.category === "birthday")
+  const todos = events.filter((event) => event.category !== "birthday")
+  
+  return (
+    <Container>
       display container
-      <Birthdays></Birthdays>
-      <ToDos></ToDos>
-      <Calendar></Calendar>
-      </Container>;
+      <Birthdays birthdays={birthdays}/>
+      <ToDos todos={todos}/>
+      <Calendar events={events}/>
+    </Container>
+  )
 }
 
 export default Display;
